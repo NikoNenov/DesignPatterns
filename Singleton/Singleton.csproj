@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Nenov.DesignPatterns.Singleton</AssemblyName>
+    <RootNamespace>Nenov.DesignPatterns.Singleton</RootNamespace>
+  </PropertyGroup>
+
+</Project>

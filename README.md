@@ -7,6 +7,10 @@
   * Singleton (not thread safe)
   * Singleton (thread safe - .NET 4 Lazy<T> type)
 
+### Structural Patterns
+
+### Behavioral Patterns
+
 ## Informations
 Infos | Links
 --- | --- 

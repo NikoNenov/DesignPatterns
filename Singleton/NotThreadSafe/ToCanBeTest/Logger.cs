@@ -1,5 +1,5 @@
 ﻿
-namespace Nenov.DesignPatterns.Singleton.NotThreadSafe
+namespace Nenov.DesignPatterns.Singleton.NotThreadSafe.ToCanBeTest
 {
   /// <summary>
   /// Not thread-safe.
@@ -14,6 +14,11 @@ namespace Nenov.DesignPatterns.Singleton.NotThreadSafe
     private static Logger _instance;
 
     /// <summary>
+    /// This property prove that Singleton really works
+    /// </summary>
+    public string Value { get; set; }
+
+    /// <summary>
     /// Default constructor
     /// </summary>
     private Logger() { }
@@ -25,5 +30,20 @@ namespace Nenov.DesignPatterns.Singleton.NotThreadSafe
     /// </summary>
     /// <returns>logger singleton instance</returns>
     public static Logger Instance() => _instance ?? (_instance = new Logger());
+
+    /// <summary>
+    /// Logger singleton instance with prove parameter
+    /// </summary>
+    /// <param name="value">Singleton prove parameter</param>
+    /// <returns>Logger singleton instance</returns>
+    public static Logger InstanceProveSingleton(string value)
+    {
+      if (_instance == null)
+      {
+        _instance = new Logger {Value = value};
+      }
+
+      return _instance;
+    }
   }
 }

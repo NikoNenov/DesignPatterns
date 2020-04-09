@@ -1,9 +1,11 @@
 # .NET Standard 2.0 Design Patterns in C#
 
+## Design Patterns
 * Singleton
   * Singleton (not thread safe)
   * Singleton (thread safe - .NET 4 Lazy<T> type)
 
+## Informations
 Infos | Links
 --- | --- 
 Design patterns | [Refactoring.guru](https://refactoring.guru/design-patterns/csharp)

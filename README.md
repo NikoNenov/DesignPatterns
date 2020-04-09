@@ -1,5 +1,8 @@
 # .NET Standard 2.0 Design Patterns in C#
-[Refactoring.guru Design patterns](https://refactoring.guru/design-patterns/csharp)
+
+* [Refactoring.guru - Design patterns](https://refactoring.guru/design-patterns/csharp)
+* [dofactory.com - .NET Design Patterns](https://www.dofactory.com/net/design-patterns)
+* [C# in Depth](https://csharpindepth.com/Articles) 
 
 * Singleton
   * Singleton (not thread safe)

@@ -10,6 +10,7 @@ namespace Nenov.DesignPatterns.MainExamples
   {
     Exit = -1,
     Singleton_NotThreadSafe = 1,
-    Singleton_LazyType = 2
+    Singleton_LazyType = 2,
+    Adapter = 3
   }
 }

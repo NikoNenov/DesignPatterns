@@ -1,4 +1,5 @@
 ﻿using System;
+using Nenov.DesignPatterns.Adapter.Example;
 using Nenov.DesignPatterns.MainExamples.Examples;
 
 namespace Nenov.DesignPatterns.MainExamples
@@ -28,13 +29,23 @@ namespace Nenov.DesignPatterns.MainExamples
             WaitAfterExample();
             break;
           }
+          case (int) DesignPatterns.Singleton_LazyType:
+          {
+              break;
+          }
+          case (int) DesignPatterns.Adapter:
+          {
+            new AdapterExample().TryAdapter();
+            WaitAfterExample();
+            break;
+          }
+          default:
+          {
+            menuPoint = -1;
+            break;
+          }
         }
       } while ( menuPoint != (int)DesignPatterns.Exit);
-
-      
-
-      Singleton.NotThreadSafe.Logger l = Singleton.NotThreadSafe.Logger.Instance();
-      Singleton.Net4LazyType.Logger l2 = Singleton.Net4LazyType.Logger.Instance;
     }
 
     /// <summary>
@@ -45,8 +56,14 @@ namespace Nenov.DesignPatterns.MainExamples
     {
       var menu = $"===== Menu - design patterns ===== {Environment.NewLine}" +
                  $"{Environment.NewLine}" +
+                 $" *** Creational Patterns *** {Environment.NewLine}" +
                  $"  1) Singleton (Not Thread Safe) {Environment.NewLine}" +
+                 $"     Lets you ensure that a class has only one instance, while providing a global access point to this instance.{Environment.NewLine}" +
                  $"  2) Singleton (.Net 4 Lazy<T> Type) {Environment.NewLine}" +
+                 $"{Environment.NewLine}" +
+                 $" *** Structural Patterns *** {Environment.NewLine}" +
+                 $"  3) Adapter {Environment.NewLine}" +
+                 $"     Allows objects with incompatible interfaces to collaborate. {Environment.NewLine}" +
                  $"{Environment.NewLine}" +
                  $" -1) Exit {Environment.NewLine}" +
                  $"> Please enter menu number: ";
@@ -59,9 +76,11 @@ namespace Nenov.DesignPatterns.MainExamples
       return userChoiceInt;
     }
 
+    /// <summary>
+    /// Display edn of example point 
+    /// </summary>
     private static void WaitAfterExample()
     {
-
       Console.Write($"{Environment.NewLine}> Press eny key: ");
       Console.ReadLine();
       Console.Clear();

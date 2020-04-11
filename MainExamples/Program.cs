@@ -22,9 +22,9 @@ namespace Nenov.DesignPatterns.MainExamples
           case (int)DesignPatterns.Singleton_NotThreadSafe:
           {
             var singletonExamples = new SingletonExamples();
-            singletonExamples.Singleton_NotThreadSafe();
+            singletonExamples.Try_Singleton_NotThreadSafe();
             Console.WriteLine(string.Empty);
-            singletonExamples.Singleton_NotThreadSafe_Fail();
+            singletonExamples.Try_Singleton_NotThreadSafe_Fail();
 
             WaitAfterExample();
             break;

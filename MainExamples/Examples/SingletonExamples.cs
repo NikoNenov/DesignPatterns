@@ -17,7 +17,7 @@ namespace Nenov.DesignPatterns.MainExamples.Examples
     /// <summary>
     /// Example that show singleton design pattern
     /// </summary>
-    public void Singleton_NotThreadSafe()
+    public void Try_Singleton_NotThreadSafe()
     {
       Console.WriteLine($"===== Example: Singleton not thread safe");
 
@@ -39,7 +39,7 @@ namespace Nenov.DesignPatterns.MainExamples.Examples
     ///
     /// Please clear and rebuild your solution for run this example.
     /// </summary>
-    public void Singleton_NotThreadSafe_Fail()
+    public void Try_Singleton_NotThreadSafe_Fail()
     {
       Console.WriteLine($"===== Example: Singleton not thread safe ***FAIL***");
       for (int i = 0; i < 5; i++)

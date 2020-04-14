@@ -1,5 +1,5 @@
 ﻿
-namespace Nenov.DesignPatterns.Adapter.AdapterA
+namespace Nenov.DesignPatterns.Adapter.Structural.AdapterA
 {
   public class AdapteeA
   {

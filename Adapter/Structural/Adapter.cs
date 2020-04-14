@@ -1,15 +1,17 @@
 ﻿
-namespace Nenov.DesignPatterns.Adapter.AdapterA
+using Nenov.DesignPatterns.Adapter.Structural.AdapterA;
+
+namespace Nenov.DesignPatterns.Adapter.Structural
 {
-  public class AdapterA : ITarget
+  public class Adapter : ITarget
   {
     private readonly AdapteeA _adapteeA;
-
+    
     /// <summary>
-    /// Specific constructor with AdapteeA parameter 
+    /// Specific constructor 
     /// </summary>
     /// <param name="adapteeA">AdapteeA object</param>
-    public AdapterA(AdapteeA adapteeA)
+    public Adapter(AdapteeA adapteeA)
     {
       _adapteeA = adapteeA;
     }
@@ -18,6 +20,6 @@ namespace Nenov.DesignPatterns.Adapter.AdapterA
     /// Implemented ITarget interface method
     /// </summary>
     /// <returns></returns>
-    public string GetRequest() => $"This is '{_adapteeA.GetSpecificRequest()}'";
+    public string GetRequest() => $"This is {_adapteeA.GetSpecificRequest()}.";
   }
 }

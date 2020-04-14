@@ -1,5 +1,5 @@
 ﻿
-namespace Nenov.DesignPatterns.Adapter
+namespace Nenov.DesignPatterns.Adapter.Structural
 {
 
   /// <summary>

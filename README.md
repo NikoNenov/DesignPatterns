@@ -8,8 +8,8 @@
   * Singleton (thread safe - .NET 4 Lazy T type)
 
 ### Structural Patterns
-* Adapter: Adapter is a structural design pattern, which allows incompatible objects to collaborate.
-* Decorator
+* Adapter - Adapter is a structural design pattern, which allows incompatible objects to collaborate.
+* Decorator - Add responsibilities to objects dynamically
 
 ### Behavioral Patterns
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using Nenov.DesignPatterns.Adapter.Example;
+using Nenov.DesignPatterns.Decorator.Example;
 using Nenov.DesignPatterns.MainExamples.Examples;
 
 namespace Nenov.DesignPatterns.MainExamples
@@ -39,6 +40,12 @@ namespace Nenov.DesignPatterns.MainExamples
             WaitAfterExample();
             break;
           }
+          case (int) DesignPatterns.Decorator:
+          {
+            new DecoratorExample().TryDecorator();
+            WaitAfterExample();
+            break;
+          }
           default:
           {
             menuPoint = -1;
@@ -63,7 +70,9 @@ namespace Nenov.DesignPatterns.MainExamples
                  $"{Environment.NewLine}" +
                  $" *** Structural Patterns *** {Environment.NewLine}" +
                  $"  3) Adapter {Environment.NewLine}" +
-                 $"     Allows objects with incompatible interfaces to collaborate. {Environment.NewLine}" +
+                 $"     Allows objects with incompatible interfaces to collaborate.{Environment.NewLine}" +
+                 $"  4) Decorator {Environment.NewLine}" +
+                 $"     Add responsibilities to objects dynamically.{Environment.NewLine}" +
                  $"{Environment.NewLine}" +
                  $" -1) Exit {Environment.NewLine}" +
                  $"> Please enter menu number: ";

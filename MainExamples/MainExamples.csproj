@@ -71,6 +71,10 @@
       <Project>{a62cbd57-3a20-400e-aef9-7635445ba575}</Project>
       <Name>Adapter</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Decorator\Decorator.csproj">
+      <Project>{0d92cdde-9402-4269-8789-44b33fd98e61}</Project>
+      <Name>Decorator</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Singleton\Singleton.csproj">
       <Project>{ff293ced-c8d3-4cb1-af7a-8760c4f61ed7}</Project>
       <Name>Singleton</Name>

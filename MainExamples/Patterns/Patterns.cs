@@ -1,6 +1,6 @@
-﻿namespace Nenov.DesignPatterns.MainExamples
+﻿namespace Nenov.DesignPatterns.MainExamples.Patterns
 {
-  public enum DesignPatterns
+  public enum Patterns
   {
     Exit = -1,
 

@@ -2,7 +2,9 @@
 using Nenov.DesignPatterns.Adapter.Example;
 using Nenov.DesignPatterns.Decorator.Example;
 using Nenov.DesignPatterns.FactoryMethod.Example;
+using Nenov.DesignPatterns.MainExamples.Definitions;
 using Nenov.DesignPatterns.MainExamples.Examples;
+using Nenov.DesignPatterns.MainExamples.Extensions;
 using Nenov.DesignPatterns.TemplateMethod.Example;
 
 namespace Nenov.DesignPatterns.MainExamples
@@ -19,10 +21,9 @@ namespace Nenov.DesignPatterns.MainExamples
       do
       {
         menuPoint = ShowMenuDesignPatterns();
-
         switch (menuPoint)
         {
-          case (int)DesignPatterns.Singleton_NotThreadSafe:
+          case (int)Patterns.SingletonNotThreadSafe:
           {
             var singletonExamples = new SingletonExamples();
             singletonExamples.Try_Singleton_NotThreadSafe();
@@ -32,29 +33,29 @@ namespace Nenov.DesignPatterns.MainExamples
             WaitAfterExample();
             break;
           }
-          case (int) DesignPatterns.Singleton_LazyType:
+          case (int)Patterns.SingletonLazyType:
           {
               break;
           }
-          case (int)DesignPatterns.FactoryMethod:
+          case (int)Patterns.FactoryMethod:
           {
             new FactoryMethodExample().TryFactoryMethod();
             WaitAfterExample();
             break;
           }
-          case (int) DesignPatterns.Adapter:
+          case (int)Patterns.Adapter:
           {
             new AdapterExample().TryAdapter();
             WaitAfterExample();
             break;
           }
-          case (int) DesignPatterns.Decorator:
+          case (int)Patterns.Decorator:
           {
             new DecoratorExample().TryDecorator();
             WaitAfterExample();
             break;
           }
-          case (int)DesignPatterns.TemplateMethod:
+          case (int)Patterns.TemplateMethod:
           {
             new TemplateMethodExample().TryTemplateMethod();
             WaitAfterExample();
@@ -66,7 +67,7 @@ namespace Nenov.DesignPatterns.MainExamples
             break;
           }
         }
-      } while ( menuPoint != (int)DesignPatterns.Exit);
+      } while ( menuPoint != (int)Patterns.Exit);
     }
 
     /// <summary>
@@ -79,25 +80,21 @@ namespace Nenov.DesignPatterns.MainExamples
                  
                  $"{Environment.NewLine}" +
                  $" *** Creational Patterns *** {Environment.NewLine}" +
-                 CreateMenuPoint(DesignPatterns.Singleton_NotThreadSafe, 
-                   "Lets you ensure that a class has only one instance, while providing a global access point to this instance.") +
-                 CreateMenuPoint(DesignPatterns.Singleton_LazyType, ".Net 4 Lazy<T> Type") +
-                 CreateMenuPoint(DesignPatterns.FactoryMethod,
-                   "Creates an instance of several derived classes") +
+                 CreateMenuPoint(Patterns.SingletonNotThreadSafe) +
+                 CreateMenuPoint(Patterns.SingletonLazyType) +
+                 CreateMenuPoint(Patterns.FactoryMethod) +
 
                  $"{Environment.NewLine}" +
                  $" *** Structural Patterns *** {Environment.NewLine}" +
-                 CreateMenuPoint(DesignPatterns.Adapter, "Allows objects with incompatible interfaces to collaborate.") +
-                 CreateMenuPoint(DesignPatterns.Decorator, "Add responsibilities to objects dynamically.") +
+                 CreateMenuPoint(Patterns.Adapter) +
+                 CreateMenuPoint(Patterns.Decorator) +
                  
                  $"{Environment.NewLine}" +
                  $" *** Behavioral Patterns *** {Environment.NewLine}" +
-                 CreateMenuPoint(DesignPatterns.TemplateMethod, 
-                   "Defines the skeleton of an algorithm in the superclass " + 
-                   "but lets subclasses override specific steps of the algorithm without changing its structure.") + 
+                 CreateMenuPoint(Patterns.TemplateMethod) + 
 
                  $"{Environment.NewLine}" +
-                 $" -1) Exit {Environment.NewLine}" +
+                 CreateMenuPoint(Patterns.Exit) +
                  $"> Please enter menu number: ";
       Console.Write(menu);
       
@@ -113,18 +110,8 @@ namespace Nenov.DesignPatterns.MainExamples
     /// </summary>
     /// <param name="designPattern"></param>
     /// <returns></returns>
-    private static string CreateMenuPoint(DesignPatterns designPattern) => $"  {(int) designPattern}) {designPattern} {Environment.NewLine}";
-
-    /// <summary>
-    /// Create one menu point with description
-    /// </summary>
-    /// <param name="designPattern"></param>
-    /// <param name="description"></param>
-    /// <returns></returns>
-    private static string CreateMenuPoint(DesignPatterns designPattern, string description) =>
-      CreateMenuPoint(designPattern) 
-      + $"     {description} {Environment.NewLine}";
-
+    private static string CreateMenuPoint(Patterns designPattern) => $"  {(int) designPattern}) {designPattern} {Environment.NewLine}" + 
+                                                                     $"     {designPattern.GetEnumDescription()} {Environment.NewLine}";
     /// <summary>
     /// Display edn of example point 
     /// </summary>

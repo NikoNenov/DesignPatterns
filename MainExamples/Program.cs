@@ -1,6 +1,7 @@
 ﻿using System;
 using Nenov.DesignPatterns.Adapter.Example;
 using Nenov.DesignPatterns.Decorator.Example;
+using Nenov.DesignPatterns.FactoryMethod.Example;
 using Nenov.DesignPatterns.MainExamples.Examples;
 using Nenov.DesignPatterns.TemplateMethod.Example;
 
@@ -34,6 +35,12 @@ namespace Nenov.DesignPatterns.MainExamples
           case (int) DesignPatterns.Singleton_LazyType:
           {
               break;
+          }
+          case (int)DesignPatterns.FactoryMethod:
+          {
+            new FactoryMethodExample().TryFactoryMethod();
+            WaitAfterExample();
+            break;
           }
           case (int) DesignPatterns.Adapter:
           {
@@ -69,19 +76,21 @@ namespace Nenov.DesignPatterns.MainExamples
     private static int ShowMenuDesignPatterns()
     {
       var menu = $"===== Menu - design patterns ===== {Environment.NewLine}" +
-                 $"{Environment.NewLine}" +
                  
+                 $"{Environment.NewLine}" +
                  $" *** Creational Patterns *** {Environment.NewLine}" +
                  CreateMenuPoint(DesignPatterns.Singleton_NotThreadSafe, 
                    "Lets you ensure that a class has only one instance, while providing a global access point to this instance.") +
                  CreateMenuPoint(DesignPatterns.Singleton_LazyType, ".Net 4 Lazy<T> Type") +
+                 CreateMenuPoint(DesignPatterns.FactoryMethod,
+                   "Creates an instance of several derived classes") +
+
                  $"{Environment.NewLine}" +
-                 
                  $" *** Structural Patterns *** {Environment.NewLine}" +
                  CreateMenuPoint(DesignPatterns.Adapter, "Allows objects with incompatible interfaces to collaborate.") +
                  CreateMenuPoint(DesignPatterns.Decorator, "Add responsibilities to objects dynamically.") +
-                 $"{Environment.NewLine}" +
                  
+                 $"{Environment.NewLine}" +
                  $" *** Behavioral Patterns *** {Environment.NewLine}" +
                  CreateMenuPoint(DesignPatterns.TemplateMethod, 
                    "Defines the skeleton of an algorithm in the superclass " + 

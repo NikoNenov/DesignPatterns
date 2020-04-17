@@ -3,9 +3,10 @@
 ## Design Patterns
 
 ### Creational Patterns
-* Singleton
+* Singleton - A class of which only a single instance can exist
   * Singleton (not thread safe)
   * Singleton (thread safe - .NET 4 Lazy T type)
+* Factory Method - Creates an instance of several derived classes
 
 ### Structural Patterns
 * Adapter - Adapter is a structural design pattern, which allows incompatible objects to collaborate.

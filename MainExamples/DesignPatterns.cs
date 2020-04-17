@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Nenov.DesignPatterns.MainExamples
+﻿namespace Nenov.DesignPatterns.MainExamples
 {
   public enum DesignPatterns
   {
@@ -14,6 +8,8 @@ namespace Nenov.DesignPatterns.MainExamples
     Singleton_LazyType = 2,
     
     Adapter = 3,
-    Decorator = 4
+    Decorator = 4,
+
+    TemplateMethod = 10
   }
 }

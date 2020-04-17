@@ -28,7 +28,7 @@ namespace Nenov.DesignPatterns.Decorator.Example
     /// Client code
     /// </summary>
     /// <param name="component"></param>
-    public void ClientCode(Component component)
+    private void ClientCode(Component component)
     {
       Console.WriteLine(component.Operation());
     }

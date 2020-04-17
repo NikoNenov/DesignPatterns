@@ -13,12 +13,15 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainExamples", "MainExamples\MainExamples.csproj", "{D250620C-6E60-4B6E-B3CE-676574B12E63}"
 	ProjectSection(ProjectDependencies) = postProject
 		{A62CBD57-3A20-400E-AEF9-7635445BA575} = {A62CBD57-3A20-400E-AEF9-7635445BA575}
+		{7A7339D9-6773-40CF-BCD8-E61F9F55A38B} = {7A7339D9-6773-40CF-BCD8-E61F9F55A38B}
 		{FF293CED-C8D3-4CB1-AF7A-8760C4F61ED7} = {FF293CED-C8D3-4CB1-AF7A-8760C4F61ED7}
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.csproj", "{A62CBD57-3A20-400E-AEF9-7635445BA575}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{0D92CDDE-9402-4269-8789-44B33FD98E61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Decorator\Decorator.csproj", "{0D92CDDE-9402-4269-8789-44B33FD98E61}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{7A7339D9-6773-40CF-BCD8-E61F9F55A38B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +45,10 @@ Global
 		{0D92CDDE-9402-4269-8789-44B33FD98E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D92CDDE-9402-4269-8789-44B33FD98E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D92CDDE-9402-4269-8789-44B33FD98E61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A7339D9-6773-40CF-BCD8-E61F9F55A38B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A7339D9-6773-40CF-BCD8-E61F9F55A38B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A7339D9-6773-40CF-BCD8-E61F9F55A38B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A7339D9-6773-40CF-BCD8-E61F9F55A38B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -49,7 +49,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -78,6 +83,10 @@
     <ProjectReference Include="..\Singleton\Singleton.csproj">
       <Project>{ff293ced-c8d3-4cb1-af7a-8760c4f61ed7}</Project>
       <Name>Singleton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TemplateMethod\TemplateMethod.csproj">
+      <Project>{7a7339d9-6773-40cf-bcd8-e61f9f55a38b}</Project>
+      <Name>TemplateMethod</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -9,9 +9,10 @@
 
 ### Structural Patterns
 * Adapter - Adapter is a structural design pattern, which allows incompatible objects to collaborate.
-* Decorator - Add responsibilities to objects dynamically
+* Decorator - Add responsibilities to objects dynamically.
 
 ### Behavioral Patterns
+* Template Method - Defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
 
 ## Informations
 Infos | Links

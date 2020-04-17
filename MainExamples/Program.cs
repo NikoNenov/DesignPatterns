@@ -2,6 +2,7 @@
 using Nenov.DesignPatterns.Adapter.Example;
 using Nenov.DesignPatterns.Decorator.Example;
 using Nenov.DesignPatterns.MainExamples.Examples;
+using Nenov.DesignPatterns.TemplateMethod.Example;
 
 namespace Nenov.DesignPatterns.MainExamples
 {
@@ -46,6 +47,12 @@ namespace Nenov.DesignPatterns.MainExamples
             WaitAfterExample();
             break;
           }
+          case (int)DesignPatterns.TemplateMethod:
+          {
+            new TemplateMethodExample().TryTemplateMethod();
+            WaitAfterExample();
+            break;
+          }
           default:
           {
             menuPoint = -1;
@@ -63,16 +70,23 @@ namespace Nenov.DesignPatterns.MainExamples
     {
       var menu = $"===== Menu - design patterns ===== {Environment.NewLine}" +
                  $"{Environment.NewLine}" +
+                 
                  $" *** Creational Patterns *** {Environment.NewLine}" +
-                 $"  1) Singleton (Not Thread Safe) {Environment.NewLine}" +
-                 $"     Lets you ensure that a class has only one instance, while providing a global access point to this instance.{Environment.NewLine}" +
-                 $"  2) Singleton (.Net 4 Lazy<T> Type) {Environment.NewLine}" +
+                 CreateMenuPoint(DesignPatterns.Singleton_NotThreadSafe, 
+                   "Lets you ensure that a class has only one instance, while providing a global access point to this instance.") +
+                 CreateMenuPoint(DesignPatterns.Singleton_LazyType, ".Net 4 Lazy<T> Type") +
                  $"{Environment.NewLine}" +
+                 
                  $" *** Structural Patterns *** {Environment.NewLine}" +
-                 $"  3) Adapter {Environment.NewLine}" +
-                 $"     Allows objects with incompatible interfaces to collaborate.{Environment.NewLine}" +
-                 $"  4) Decorator {Environment.NewLine}" +
-                 $"     Add responsibilities to objects dynamically.{Environment.NewLine}" +
+                 CreateMenuPoint(DesignPatterns.Adapter, "Allows objects with incompatible interfaces to collaborate.") +
+                 CreateMenuPoint(DesignPatterns.Decorator, "Add responsibilities to objects dynamically.") +
+                 $"{Environment.NewLine}" +
+                 
+                 $" *** Behavioral Patterns *** {Environment.NewLine}" +
+                 CreateMenuPoint(DesignPatterns.TemplateMethod, 
+                   "Defines the skeleton of an algorithm in the superclass " + 
+                   "but lets subclasses override specific steps of the algorithm without changing its structure.") + 
+
                  $"{Environment.NewLine}" +
                  $" -1) Exit {Environment.NewLine}" +
                  $"> Please enter menu number: ";
@@ -84,6 +98,23 @@ namespace Nenov.DesignPatterns.MainExamples
 
       return userChoiceInt;
     }
+
+    /// <summary>
+    /// Create one menu point
+    /// </summary>
+    /// <param name="designPattern"></param>
+    /// <returns></returns>
+    private static string CreateMenuPoint(DesignPatterns designPattern) => $"  {(int) designPattern}) {designPattern} {Environment.NewLine}";
+
+    /// <summary>
+    /// Create one menu point with description
+    /// </summary>
+    /// <param name="designPattern"></param>
+    /// <param name="description"></param>
+    /// <returns></returns>
+    private static string CreateMenuPoint(DesignPatterns designPattern, string description) =>
+      CreateMenuPoint(designPattern) 
+      + $"     {description} {Environment.NewLine}";
 
     /// <summary>
     /// Display edn of example point 

@@ -1,11 +1,11 @@
 ﻿using System;
-using Nenov.DesignPatterns.Adapter.Example;
-using Nenov.DesignPatterns.Decorator.Example;
-using Nenov.DesignPatterns.FactoryMethod.Example;
+//using Nenov.DesignPatterns.Adapter.Example;
+//using Nenov.DesignPatterns.Decorator.Example;
+//using Nenov.DesignPatterns.FactoryMethod.Example;
 using Nenov.DesignPatterns.MainExamples.Definitions;
 using Nenov.DesignPatterns.MainExamples.Examples;
 using Nenov.DesignPatterns.MainExamples.Extensions;
-using Nenov.DesignPatterns.TemplateMethod.Example;
+//using Nenov.DesignPatterns.TemplateMethod.Example;
 
 namespace Nenov.DesignPatterns.MainExamples
 {
@@ -39,25 +39,25 @@ namespace Nenov.DesignPatterns.MainExamples
           }
           case (int)Patterns.FactoryMethod:
           {
-            new FactoryMethodExample().TryFactoryMethod();
+            //new FactoryMethodExample().TryFactoryMethod();
             WaitAfterExample();
             break;
           }
           case (int)Patterns.Adapter:
           {
-            new AdapterExample().TryAdapter();
+            //new AdapterExample().TryAdapter();
             WaitAfterExample();
             break;
           }
           case (int)Patterns.Decorator:
           {
-            new DecoratorExample().TryDecorator();
+            //new DecoratorExample().TryDecorator();
             WaitAfterExample();
             break;
           }
           case (int)Patterns.TemplateMethod:
           {
-            new TemplateMethodExample().TryTemplateMethod();
+            //new TemplateMethodExample().TryTemplateMethod();
             WaitAfterExample();
             break;
           }

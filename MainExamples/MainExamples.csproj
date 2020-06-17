@@ -73,15 +73,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Adapter\Adapter.csproj">
+    <ProjectReference Include="..\_Adapter\_Adapter.csproj">
       <Project>{a62cbd57-3a20-400e-aef9-7635445ba575}</Project>
       <Name>Adapter</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Decorator\Decorator.csproj">
+    <ProjectReference Include="..\_Decorator\_Decorator.csproj">
       <Project>{0d92cdde-9402-4269-8789-44b33fd98e61}</Project>
       <Name>Decorator</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FactoryMethod\FactoryMethod.csproj">
+    <ProjectReference Include="..\_FactoryMethod\_FactoryMethod.csproj">
       <Project>{f8f76ff3-759e-4b2a-8d0b-2fe97e3bcc68}</Project>
       <Name>FactoryMethod</Name>
     </ProjectReference>
@@ -89,7 +89,7 @@
       <Project>{ff293ced-c8d3-4cb1-af7a-8760c4f61ed7}</Project>
       <Name>Singleton</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TemplateMethod\TemplateMethod.csproj">
+    <ProjectReference Include="..\_TemplateMethod\_TemplateMethod.csproj">
       <Project>{7a7339d9-6773-40cf-bcd8-e61f9f55a38b}</Project>
       <Name>TemplateMethod</Name>
     </ProjectReference>

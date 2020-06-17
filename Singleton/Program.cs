@@ -4,23 +4,29 @@
 //  </copyright>
 // 
 //  <summary>
-//    Main "Factory Method" pattern example
+//    Main "Singleton" pattern example
 //  </summary>
 // 
 //  <date>17-06-2020</date>
 //  <author>Nikolay Nenov</author>
 //  --------------------------------------------------------------------------------------------------------------------
 
-using Nenov.DesignPatterns.FactoryMethod.Example;
+using System;
+using Nenov.DesignPatterns.MainExamples.Examples;
 
-namespace Nenov.DesignPatterns.FactoryMethod
+namespace Nenov.DesignPatterns.Singleton
 {
   public class Program
   {
     public static void Main(string[] args)
     {
-      var factoryMethod = new FactoryMethodExample();
-      factoryMethod.TryFactoryMethod();
+      // SingletonNotThreadSafe
+      var singletonExamples = new SingletonExamples();
+      singletonExamples.Try_Singleton_NotThreadSafe();
+      Console.WriteLine(string.Empty);
+      singletonExamples.Try_Singleton_NotThreadSafe_Fail();
+
+      // SingletonLazyType
     }
   }
 }

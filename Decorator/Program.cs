@@ -1,14 +1,14 @@
 ﻿//  --------------------------------------------------------------------------------------------------------------------
-//  <copyright file="Program.cs" company="Curtis Instruments AG">
-//  (c) 2020 Curtis Instruments AG, Biberist, Switzerland, www.curtis.ch
+//  <copyright file="Program.cs">
+//  (c) 2020 Nikolay Nenov, Solothurn, Switzerland, www.nenov.de
 //  </copyright>
 // 
 //  <summary>
-//    TODO .......
+//    Main "Decorator" pattern example
 //  </summary>
 // 
 //  <date>17-06-2020</date>
-//  <author>nenovn</author>
+//  <author>Nikolay Nenov</author>
 //  --------------------------------------------------------------------------------------------------------------------
 
 using Nenov.DesignPatterns.Decorator.Example;

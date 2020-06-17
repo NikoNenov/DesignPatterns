@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Singleton.csproj", "{FF293CED-C8D3-4CB1-AF7A-8760C4F61ED7}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1B7B21C5-6191-4757-9821-9711D95B2146}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
@@ -12,7 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainExamples", "MainExamples\MainExamples.csproj", "{D250620C-6E60-4B6E-B3CE-676574B12E63}"
 	ProjectSection(ProjectDependencies) = postProject
-		{A62CBD57-3A20-400E-AEF9-7635445BA575} = {A62CBD57-3A20-400E-AEF9-7635445BA575}
 		{FF293CED-C8D3-4CB1-AF7A-8760C4F61ED7} = {FF293CED-C8D3-4CB1-AF7A-8760C4F61ED7}
 	EndProjectSection
 EndProject
@@ -22,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Decorator\Decorator.csproj", "{EEC77FC7-C44E-4B13-A0E2-584C8133868E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{62DF6E04-47B0-4A11-9E48-39079E4DB842}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.csproj", "{62DF6E04-47B0-4A11-9E48-39079E4DB842}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{D129CCDF-8A2E-4962-B86D-2E7237FBE3A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,10 +37,6 @@ Global
 		{D250620C-6E60-4B6E-B3CE-676574B12E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D250620C-6E60-4B6E-B3CE-676574B12E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D250620C-6E60-4B6E-B3CE-676574B12E63}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A62CBD57-3A20-400E-AEF9-7635445BA575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A62CBD57-3A20-400E-AEF9-7635445BA575}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A62CBD57-3A20-400E-AEF9-7635445BA575}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A62CBD57-3A20-400E-AEF9-7635445BA575}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A3CDF59E-0321-4671-8DA2-404A91AA6340}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A3CDF59E-0321-4671-8DA2-404A91AA6340}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3CDF59E-0321-4671-8DA2-404A91AA6340}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -58,6 +53,10 @@ Global
 		{62DF6E04-47B0-4A11-9E48-39079E4DB842}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62DF6E04-47B0-4A11-9E48-39079E4DB842}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62DF6E04-47B0-4A11-9E48-39079E4DB842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D129CCDF-8A2E-4962-B86D-2E7237FBE3A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D129CCDF-8A2E-4962-B86D-2E7237FBE3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D129CCDF-8A2E-4962-B86D-2E7237FBE3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D129CCDF-8A2E-4962-B86D-2E7237FBE3A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

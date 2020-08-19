@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Nenov.DesignPatterns.FactoryMethod.Structural.ConcreteCreatorA">
+    <Position X="2.5" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structural\ConcreteCreatorA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nenov.DesignPatterns.FactoryMethod.Structural.ConcreteCreatorB">
+    <Position X="5.5" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structural\ConcreteCreatorB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nenov.DesignPatterns.FactoryMethod.Structural.ConcreteProductA" BaseTypeListCollapsed="true">
+    <Position X="9" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Structural\ConcreteProductA.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.256" />
+  </Class>
+  <Class Name="Nenov.DesignPatterns.FactoryMethod.Structural.ConcreteProductB" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Structural\ConcreteProductB.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Nenov.DesignPatterns.FactoryMethod.Structural.Creator">
+    <Position X="4" Y="1" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structural\Creator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Nenov.DesignPatterns.FactoryMethod.Structural.IProduct">
+    <Position X="10" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Structural\IProduct.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

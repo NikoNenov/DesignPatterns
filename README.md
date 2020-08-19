@@ -24,7 +24,11 @@
 
 #### Template Method 
 * Defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
-<img src="/TemplateMethod/Design/Diagram.png" height="250" />
+<img src="/TemplateMethod/Design/Diagram.png" height="300" />
+
+#### State
+* Allow an object to alter its behavior when its internal state changes. The object will appear to change its class. 
+<img src="/State/Design/Diagram.png" height="300" />
 
 ## Informations
 Infos | Links

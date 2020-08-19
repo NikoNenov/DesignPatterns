@@ -7,11 +7,11 @@
   * Singleton (not thread safe)
   * Singleton (thread safe - .NET 4 Lazy T type)
 * Factory Method - Creates an instance of several derived classes
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
-![Alt text](/DesignPatterns/tree/master/TemplateMethod/Design/Diagram.png?raw=true "Optional Title 1")
-![Alt text](/DesignPatterns/TemplateMethod/Design/Diagram.png?raw=true "Optional Title 2")
 
-![Alt text](/NikoNenov/DesignPatterns/tree/master/TemplateMethod/Design/Diagram.png?raw=true "Optional Title 3")
+![Alt text](/TemplateMethod/Design/Diagram.png "Optional Title 1")
+
+
+
 
 
 

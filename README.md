@@ -12,7 +12,9 @@
 
 ### Structural Patterns
 * Adapter - Adapter is a structural design pattern, which allows incompatible objects to collaborate.
-* Decorator - Add responsibilities to objects dynamically.
+#### Decorator
+* Add responsibilities to objects dynamically.
+<img src="/Decorator/Design/Diagram.png" height="250" />
 
 ### Behavioral Patterns
 

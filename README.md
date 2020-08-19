@@ -11,7 +11,11 @@
 <img src="/FactoryMethod/Design/Diagram.png" height="250" />
 
 ### Structural Patterns
-* Adapter - Adapter is a structural design pattern, which allows incompatible objects to collaborate.
+
+#### Adapter 
+* Adapter is a structural design pattern, which allows incompatible objects to collaborate.
+<img src="/Adapter/Design/Diagram.png" height="250" />
+
 #### Decorator
 * Add responsibilities to objects dynamically.
 <img src="/Decorator/Design/Diagram.png" height="450" />

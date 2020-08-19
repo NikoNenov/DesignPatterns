@@ -9,9 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainExamples", "MainExamples\MainExamples.csproj", "{D250620C-6E60-4B6E-B3CE-676574B12E63}"
-	ProjectSection(ProjectDependencies) = postProject
-		{FF293CED-C8D3-4CB1-AF7A-8760C4F61ED7} = {FF293CED-C8D3-4CB1-AF7A-8760C4F61ED7}
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethod", "TemplateMethod\TemplateMethod.csproj", "{A3CDF59E-0321-4671-8DA2-404A91AA6340}"
 EndProject
@@ -21,7 +18,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Decorator\Deco
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.csproj", "{62DF6E04-47B0-4A11-9E48-39079E4DB842}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Singleton.csproj", "{D129CCDF-8A2E-4962-B86D-2E7237FBE3A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Singleton.csproj", "{D129CCDF-8A2E-4962-B86D-2E7237FBE3A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State", "State\State.csproj", "{449D5652-364E-4C72-9771-3F343639992F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +28,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FF293CED-C8D3-4CB1-AF7A-8760C4F61ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FF293CED-C8D3-4CB1-AF7A-8760C4F61ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FF293CED-C8D3-4CB1-AF7A-8760C4F61ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FF293CED-C8D3-4CB1-AF7A-8760C4F61ED7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D250620C-6E60-4B6E-B3CE-676574B12E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D250620C-6E60-4B6E-B3CE-676574B12E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D250620C-6E60-4B6E-B3CE-676574B12E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -57,6 +52,10 @@ Global
 		{D129CCDF-8A2E-4962-B86D-2E7237FBE3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D129CCDF-8A2E-4962-B86D-2E7237FBE3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D129CCDF-8A2E-4962-B86D-2E7237FBE3A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{449D5652-364E-4C72-9771-3F343639992F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{449D5652-364E-4C72-9771-3F343639992F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{449D5652-364E-4C72-9771-3F343639992F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{449D5652-364E-4C72-9771-3F343639992F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

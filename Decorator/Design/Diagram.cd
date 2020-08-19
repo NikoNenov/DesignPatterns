@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Nenov.DesignPatterns.Decorator.Structural.Component">
+    <Position X="6.5" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Structural\Component.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nenov.DesignPatterns.Decorator.Structural.ConcreteComponent">
+    <Position X="3.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Structural\ConcreteComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nenov.DesignPatterns.Decorator.Structural.ConcreteDecoratorA">
+    <Position X="10" Y="6" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Structural\ConcreteDecoratorA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nenov.DesignPatterns.Decorator.Structural.ConcreteDecoratorB">
+    <Position X="6" Y="6" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAQA=</HashCode>
+      <FileName>Structural\ConcreteDecoratorB.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nenov.DesignPatterns.Decorator.Structural.Decorator">
+    <Position X="8" Y="3" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAEAAEAAAAA=</HashCode>
+      <FileName>Structural\Decorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

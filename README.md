@@ -6,10 +6,9 @@
 * Singleton - A class of which only a single instance can exist
   * Singleton (not thread safe)
   * Singleton (thread safe - .NET 4 Lazy T type)
-* Factory Method - Creates an instance of several derived classes
-
-![Alt text](/TemplateMethod/Design/Diagram.png "Optional Title 1")
-
+#### Factory Method
+* Creates an instance of several derived classes
+<img src="/TemplateMethod/Design/Diagram.png" width="300" />
 
 
 

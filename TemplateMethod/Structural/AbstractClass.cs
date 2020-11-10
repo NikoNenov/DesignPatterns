@@ -31,7 +31,7 @@ namespace Nenov.DesignPatterns.TemplateMethod.Structural
     /// </summary>
     protected void BaseOperation()
     {
-      Console.WriteLine("AbstractClass call BaseOperation()");
+      Console.WriteLine(" - 'AbstractClass' call 'BaseOperation'");
     }
 
     /// <summary>
@@ -47,7 +47,7 @@ namespace Nenov.DesignPatterns.TemplateMethod.Structural
     /// </summary>
     protected virtual void Hook()
     {
-      Console.WriteLine("AbstractClass call Hook()");
+      Console.WriteLine(" - 'AbstractClass' call 'Hook'");
     }
   }
 }

@@ -8,6 +8,7 @@ namespace Nenov.DesignPatterns.TemplateMethod.Example
     public void TryTemplateMethod()
     {
       Console.WriteLine("Same client code can work with different subclasses:");
+      Console.WriteLine(" - 'ConcreteClassA' call 'TemplateMethod'");
       ClientCode(new ConcreteClassA());
 
       Console.WriteLine();

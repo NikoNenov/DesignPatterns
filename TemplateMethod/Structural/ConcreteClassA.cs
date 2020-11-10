@@ -10,7 +10,7 @@ namespace Nenov.DesignPatterns.TemplateMethod.Structural
   {
     protected override void RequiredOperation()
     {
-      Console.WriteLine("ConcreteClassA call RequiredOperation() ###");
+      Console.WriteLine(" - 'ConcreteClassA' call 'RequiredOperation' Concrete implementation!");
     }
   }
 }

@@ -38,27 +38,27 @@ namespace Nenov.DesignPatterns.State.Structural
     /// The Context allows changing the State object at runtime.
     /// </summary>
     /// <param name="state"></param>
-    public void TransitionTo(State state)
+    public string TransitionTo(State state)
     {
-      Console.WriteLine($"Context: Transition to {state.GetType().Name}.");
       _state = state;
       _state.SetContext(this);
+      return $"Context: Transition to {state.GetType().Name}. {Environment.NewLine}";
     }
 
     /// <summary>
     /// The Context delegates part of its behavior to the current State object.
     /// </summary>
-    public void RequestA()
+    public string RequestA()
     {
-      _state.HandleA();
+      return _state.HandleA();
     }
 
     /// <summary>
     /// The Context delegates part of its behavior to the current State object.
     /// </summary>
-    public void RequestB()
+    public string RequestB()
     {
-      _state.HandleB();
+      return _state.HandleB();
     }
   }
 }

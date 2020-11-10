@@ -31,8 +31,8 @@ namespace Nenov.DesignPatterns.State.Structural
       Context = context;
     }
 
-    public abstract void HandleA();
+    public abstract string HandleA();
 
-    public abstract void HandleB();
+    public abstract string HandleB();
   }
 }

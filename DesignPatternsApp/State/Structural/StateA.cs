@@ -20,19 +20,21 @@ namespace Nenov.DesignPatterns.State.Structural
     /// <summary>
     /// Handle request
     /// </summary>
-    public override void HandleA()
+    public override string HandleA()
     {
-      Console.WriteLine("Concrete StateA handles request A.");
-      Console.WriteLine("Concrete StateA wants to change the state of the context.");
-      Context.TransitionTo(new StateB());
+      var message = $"Concrete StateA handles request A. {Environment.NewLine}";
+      message += $"Concrete StateA wants to change the state of the context. {Environment.NewLine}";
+      message += Context.TransitionTo(new StateB());
+
+      return message;
     }
 
     /// <summary>
     /// Handle request
     /// </summary>
-    public override void HandleB()
+    public override string HandleB()
     {
-      Console.WriteLine("Concrete StateA handles request B.");
+      return $"Concrete StateA handles request B. {Environment.NewLine}";
     }
   }
 }

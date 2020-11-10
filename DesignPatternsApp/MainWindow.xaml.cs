@@ -3,6 +3,7 @@ using System.Windows;
 using Nenov.DesignPatterns.Adapter.Structural;
 using Nenov.DesignPatterns.Adapter.Structural.AdapterA;
 using Nenov.DesignPatterns.Decorator.Structural;
+using Nenov.DesignPatterns.State.Structural;
 
 namespace Nenov.DesignPatternsApp
 {
@@ -48,6 +49,18 @@ namespace Nenov.DesignPatternsApp
       DesignPatternsLog.Text += $"Adapter@ Adaptee interface is incompatible with the client. {Environment.NewLine}" +
                                 $"Adapter@ But with adapter Adapter client can call it's method. {Environment.NewLine}";
       DesignPatternsLog.Text += $"Adapter@ {targetA.GetRequest()}{Environment.NewLine}";
+    }
+
+    /// <summary>
+    /// Execute state design pattern example
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void State_OnClick(object sender, RoutedEventArgs e)
+    {
+      var context = new Context(new StateA());
+      DesignPatternsLog.Text += context.RequestA();
+      DesignPatternsLog.Text += context.RequestB();
     }
   }
 }

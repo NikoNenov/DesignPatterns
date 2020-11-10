@@ -46,7 +46,7 @@
           <Button Content="Mediator" IsEnabled="False"/>
           <Button Content="Memento" IsEnabled="False"/>
           <Button Content="Observer" IsEnabled="False"/>
-          <Button Content="State" IsEnabled="False"/>
+          <Button Content="State" Click="State_OnClick"/>
           <Button Content="Strategy" IsEnabled="False"/>
           <Button Content="Visitor" IsEnabled="False"/>
           <Button Content="Template Method" IsEnabled="False"/>

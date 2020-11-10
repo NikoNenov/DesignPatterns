@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="State\Structural\Context.cs" />
+    <Compile Include="State\Structural\State.cs" />
+    <Compile Include="State\Structural\StateA.cs" />
+    <Compile Include="State\Structural\StateB.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -100,6 +104,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="State\Design\Diagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -109,6 +114,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Adapter\Design\Diagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="State\Design\Diagram.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

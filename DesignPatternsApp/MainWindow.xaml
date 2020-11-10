@@ -1,0 +1,64 @@
+﻿<Window x:Class="Nenov.DesignPatternsApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesignPatternsApp"
+        mc:Ignorable="d"
+        Title=".NET Design Patterns" Height="300" Width="800">
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+
+    <!-- Design Patterns Buttons -->
+    <StackPanel Grid.Column="0" Orientation="Horizontal">
+
+      <GroupBox Header="Creational Patterns">
+        <StackPanel>
+          <Button Content="Singleton" IsEnabled="False"/>
+          <Button Content="Builder" IsEnabled="False"/>
+          <Button Content="Prototype" IsEnabled="False"/>
+          <Button Content="Abstract Factory" IsEnabled="False"/>
+          <Button Content="Factory Method" IsEnabled="False"/>
+        </StackPanel>
+      </GroupBox>
+
+      <GroupBox Header="Structural Patterns">
+        <StackPanel>
+          <Button Content="Adapter" Click="Adapter_OnClick"/>
+          <Button Content="Bridge" IsEnabled="False"/>
+          <Button Content="Composite" IsEnabled="False"/>
+          <Button Content="Decorator" Click="Decorator_OnClick" />
+          <Button Content="Facade" IsEnabled="False"/>
+          <Button Content="Flyweight" IsEnabled="False"/>
+          <Button Content="Proxy" IsEnabled="False"/>
+        </StackPanel>
+      </GroupBox>
+
+      <GroupBox Header="Structural Patterns">
+        <StackPanel>
+          <Button Content="Chain of Responsibility" IsEnabled="False"/>
+          <Button Content="Command" IsEnabled="False"/>
+          <Button Content="Interpreter" IsEnabled="False"/>
+          <Button Content="Iterator" IsEnabled="False"/>
+          <Button Content="Mediator" IsEnabled="False"/>
+          <Button Content="Memento" IsEnabled="False"/>
+          <Button Content="Observer" IsEnabled="False"/>
+          <Button Content="State" IsEnabled="False"/>
+          <Button Content="Strategy" IsEnabled="False"/>
+          <Button Content="Visitor" IsEnabled="False"/>
+          <Button Content="Template Method" IsEnabled="False"/>
+        </StackPanel>
+      </GroupBox>
+    </StackPanel>
+
+    <!-- Log -->
+    <TextBlock Grid.Column="1" 
+               x:Name="DesignPatternsLog"
+               VerticalAlignment="Stretch" 
+               Margin="5" 
+               Background="AntiqueWhite"/>
+  </Grid>
+</Window>
